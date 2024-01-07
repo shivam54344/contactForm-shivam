@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Sample Portfolio website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="home-part">
+            <div class="img-part">
+                <img src="images/img1.jpg" alt="No profile photo" class="image1"/>
+            </div>
+            <div class="cnt-part">
+                <div class="cnt">
+                    <p>Hi, It is me</p>
+                    <h1>Shivam Mandal</h1>
+                    <p>And I am a Fullstack Developer</p>
+                    <p id="short-desc">I am a Fullstack Developer and I have the working experience of 6 months in both frontend as well as backend part of the website...</p>
+                    <div id="btnOne" onclick="window.location='#about'">More About Me</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-part" id="about">
+            <div class="img-part">
+                <img src="images/img1.jpg" alt="No profile photo" class="image1"/>
+            </div>
+            <div class="cnt-part">
+                <h1>About Me</h1>
+                <div class="cnt">
+                    <h3>Fullstack developer</h3>
+                    <p>I am a Fullstack Developer and I have the working experience of 6 months in both frontend as well as backend part of the website. I was assigned as Trainee Software Developer in Sakshi Infotech Solutions LLP, Mumbai. There I worked with project based on technogies of both frontend & backend like HTML, CSS, JS, React JS, Redux, Bootstrap, Tailwind, React Native, Node JS, Express, etc. Also I have done 1 year online fullstack development course based on these technologies above. Also various project have build using these technologies so I am familiar with these technologies.</p>
+                    <div id="btnTwo" onclick="window.location='#skill'">Show My Skills</div>
+                </div>
+            </div>
+        </div>
+        <div class="skill-part" id="skill">
+            <div class="head">
+                <h1>Skills</h1>
+            </div>
+            <div class="cnt-part"></div>
+        </div>
+        <div class="project-part" id="project">
+            <div class="head">
+                <h1>My Projects</h1>
+            </div>
+            <div class="cnt-part">
+                <div class="card">
+                    <img src="images/img2.jpg" alt="No preview" class="card-img" />
+                    <div class="card-detail">
+                        <h2>Scientific Calculator</h2>
+                        <div class="btn-sec">
+                            <div class="card-btn" id="web" onclick="window.location.href='https://scientific-calculator-shivam.netlify.app/'">Web view</div>
+                            <div class="card-btn" id="code" onclick="window.location.href='https://github.com/shivam54344/scientific_calculator'">Code view</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img3.jpg" alt="No preview" class="card-img" />
+                    <div class="card-detail">
+                        <h2>Thali App</h2>
+                        <div class="btn-sec">
+                            <div class="card-btn" id="web" onclick="window.location.href='https://thali-app-shivam.netlify.app'">Web view</div>
+                            <div class="card-btn" id="code" onclick="window.location.href='https://github.com/shivam54344/thali_app'">Code view</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img4.jpg" alt="No preview" class="card-img" />
+                    <div class="card-detail">
+                        <h2>Todo App</h2>
+                        <div class="btn-sec">
+                            <div class="card-btn" id="web" onclick="window.location.href='https://todo-app-shivam.netlify.app'">Web view</div>
+                            <div class="card-btn" id="code" onclick="window.location.href='https://github.com/shivam54344/todo_app'">Code view</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-part" id="contact">
+            <div class="desc">
+                <h1>Contact Me !</h1>
+                <p>Kindly fill this form if you are interested to contact me.</p>
+                <div>
+                    <p>To view my resume <a href="CV.pdf">click here</a>.</p>
+                </div>
+            </div>
+            <div class="frm">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="6f217047-fff5-45c3-9bc6-d26cd3fd60b6">
+                    <input type="text" placeholder="Enter Your Name..."  name="name" required/>
+                    <input type="number" placeholder="Enter Your Mobile No..."  name="number" required/>
+                    <input type="email" placeholder="Enter Your Email Id..."  name="email" required/>
+                    <input type="text" placeholder="Enter Your Subject..."  name="subject" required/>
+                    <textarea placeholder="Enter Your Message..." name="message" required></textarea>
+                    <button class="but" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-part">
+            <h3>Copyrights Reserved.</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
